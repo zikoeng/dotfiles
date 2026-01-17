@@ -97,6 +97,7 @@ zinit light twpayne/chezmoi
 # --- tealdeer --- #
 
 zinit ice wait lucid as'command' from'gh-r' bpick'tealdeer*' mv'tealdeer* -> tldr' \
+  atinit'export TEALDEER_CONFIG_DIR=${XDG_CONFIG_HOME}/tealdeer' \
   atclone'
     curl -fsL https://raw.githubusercontent.com/tealdeer-rs/tealdeer/refs/heads/main/completion/zsh_tealdeer -o ./_tldr
   ' atpull'%atclone' pick'tldr'
